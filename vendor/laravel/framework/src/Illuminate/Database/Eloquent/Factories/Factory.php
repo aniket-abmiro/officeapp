@@ -289,7 +289,6 @@ abstract class Factory
             $this->callAfterCreating(collect([$results]), $parent);
         } else {
             $this->store($results);
-
             $this->callAfterCreating($results, $parent);
         }
 

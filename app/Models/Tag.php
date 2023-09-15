@@ -10,4 +10,9 @@ class Tag extends Model
     use HasFactory;
 
     public $timestamps =false;
+
+    public function offices()
+    {
+        return $this->belongsToMany(Offices::class,'offices_tags');
+    }
 }
